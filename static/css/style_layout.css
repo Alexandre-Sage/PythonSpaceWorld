@@ -1,0 +1,173 @@
+/*CSS LAYOUT*/
+
+*
+{
+   box-sizing: border-box;
+   font-size: 10px;
+
+}
+
+:root
+{
+   --font-color: rgba(255, 255, 255, 1);
+   --police-size: 4.5rem;
+   --space-back: url("../page234/background.svg");
+   --nunito-font: 'Nunito', sans-serif;
+   --box-show: 1px solid black;
+}
+
+html
+{
+   height: 74rem;
+   width: 137rem;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   color: var(--font-color);
+}
+
+body
+{
+   background: var(--space-back) no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+h2
+{
+   font-size: var(--police-size);
+   font-family: var(--nunito-font);
+   margin-top: -1rem;
+}
+
+main
+{
+   display: flex;
+   flex-direction: unset;
+   align-items: center;
+   justify-content: center;
+}
+
+form
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 10rem;
+}
+
+.start
+{
+   margin-left: 10.5rem;
+}
+
+.spec
+{
+   margin-left: 14.5rem;
+}
+
+p
+{
+   display: flex;
+
+}
+
+.radio
+{
+   height: 8rem;
+   width: 5rem;
+}
+
+label
+{
+   font-size: 6rem;
+   font-family: var(--nunito-font);
+   margin-left: 4rem;
+}
+
+.small
+{
+   font-size: 4rem;
+   margin: auto;
+}
+
+button
+{
+   width: 17rem;
+   height: 7.5rem;
+   font-size: 2.6rem;
+   margin-left: 6rem;
+   color: rgba(0, 157, 243, 0.8);
+}
+
+.congrat
+{
+   font-family: var(--nunito-font);
+   text-align: center;
+   font-size: 4rem;
+   margin-top: 2rem;
+}
+
+
+.formulaire2
+{
+   display: flex;
+   margin-top: 3rem;
+}
+
+.form2
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.lab
+{
+   font-size: 4rem;
+   margin-left: unset;
+}
+
+.inp2
+{
+   font-size: 2rem;
+   height: 4rem;
+   width: 35rem;
+}
+
+.retry
+{
+   text-align: center;
+   margin-top: 17rem;
+   align-self: center;
+}
+.btn-start
+{
+   font-size: 3.6rem;
+   text-align: center;
+   text-decoration: none;
+   font-family: var(--nunito-font);
+   color: rgba(0, 157, 243, 0.8);
+   display: block;
+   padding-top: 1.5rem;
+   width: 28rem;
+   height: 8rem;
+   border-radius: 1.5rem;
+   background-color: var(--font-color);
+}
+
+.btn-start:hover
+{
+   font-size: 3.6rem;
+   text-align: center;
+   text-decoration: none;
+   font-family: var(--nunito-font);
+   display: block;
+   padding-top: 1.5rem;
+   width: 28rem;
+   height: 8rem;
+   border-radius: 1.5rem;
+   background: none;
+   border: 2px solid white;
+   transition:  border linear 4s ease-in;
+}

@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+
+{%block question%}
+  <h2 class="congrat">Félicitations vous avez correctement répondu rensigner vos coordonées et participez au tirage au sort!!!</h2>
+{%endblock%}
+
+{%block main%}
+   {%if param4%}
+      <form class="formulaire2" action="{{url_for("page_reg")}}" method="post">
+
+         <p class="form2">
+            <label class="lab" for="nom">Nom: </label>
+            <input class="inp2" type="text" name="nom" value="Nom">
+         </p>
+
+         <p class="form2">
+            <label class="lab" for="prenom">Prenom:</label>
+            <input class="inp2" type="text" name="prenom" value="Prenom">
+         </p>
+
+         <p class="form2">
+            <label class="lab" for="mail">Email:</label>
+            <input class="inp2" type="text" name="mail" value="Mail">
+         </p>
+         <button type="submit" name="button_send">Valider</button>
+      </form>
+   {%endif%}
+{%endblock%}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!--POLICE-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+      <!--FIN POLICE-->
+      <link rel="stylesheet" type="text/css" href={{url_for("static",filename="css/style_layout.css")}}>
+      <title>Questionnaire</title>
+   </head>
+   <body>
+      <header>
+         {%block question%}
+            <h2>Quel est le nom des habitans de pandora?</h2>
+         {%endblock%}
+      </header>
+      <main>
+      {%block main%}
+         {%if param1%}
+         <form class="formulaire start" action="{{url_for("page_debut")}}" method="post">
+
+         <p>
+            <input class="radio" id="navi" type="checkbox" name="navi"><label for="navi">NA'VI</label>
+         </p>
+         <p>
+            <input class="radio" id="dothraki" type="checkbox" name="dothraki" value=""><label for="dothraki">Dothraki</label>
+         </p>
+         <p>
+            <input class="radio" id="pandoriant" type="checkbox" name="pandoriant" value=""><label for="pandoriant">Pandoriant</label>
+         </p>
+            <button type="submit" name="button">Valider</button>
+         </form>
+         {%endif%}
+      {%endblock%}
+      </main>
+   </body>
+</html>

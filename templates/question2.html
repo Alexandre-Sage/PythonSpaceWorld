@@ -1,0 +1,23 @@
+ {%extends "layout.html"%}
+
+{%block question%}
+   <h2>A quelle distance se trouve Pandora de la Terre?</h2>
+{%endblock%}
+
+{%block main%}
+   {%if param2%}
+   <form class="formulaire spec" action="{{url_for("page_quest2")}}" method="post">
+
+   <p>
+      <input class="radio" id="4al" type="checkbox" name="4al"><label class="small" for="4al">4 Années lumiéres?</label>
+   </p>
+   <p>
+      <input class="radio" id="15al" type="checkbox" name="15al" value=""><label class="small" for="15al">15 Années lumiéres?</label>
+   </p>
+   <p>
+      <input class="radio" id="9al" type="checkbox" name="9al" value=""><label class="small" for="9al">9 Années lumiéres?</label>
+   </p>
+      <button type="submit" name="button">Valider</button>
+   </form>
+   {%endif%}
+{%endblock%}

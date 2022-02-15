@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+
+{%block question%}
+   <h2>De quelle couleur sont les NA'VI</h2>
+{%endblock%}
+
+{%block main%}
+   {%if param3%}
+   <form class="formulaire" action="{{url_for("page_quest3")}}" method="post">
+
+   <p>
+      <input class="radio" id="bleu" type="checkbox" name="bleu"><label  for="bleu">Bleu</label>
+   </p>
+   <p>
+      <input class="radio" id="rouge" type="checkbox" name="rouge" value=""><label  for="rouge">Rouge</label>
+   </p>
+   <p>
+      <input class="radio" id="marron" type="checkbox" name="marron" value=""><label  for="marron">Marron</label>
+   </p>
+      <button type="submit" name="button">Valider</button>
+   </form>
+   {%endif%}
+{%endblock%}

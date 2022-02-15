@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+   <!--POLICE-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+   <!--FIN POLICE-->
+      <link rel="stylesheet" type="text/css" href={{url_for("static",filename="css/style_index.css")}}>
+      <title></title>
+   </head>
+
+   <body>
+      <header>
+         <h1>Bienvenue dans ce Quizz SpaceDream</h1>
+      </header>
+
+      <main>
+      <div class="cont-main">
+         <img class="reverse" src="{{url_for("static",filename="page1/reversespaceman.svg")}}" alt="">
+         <div class="parag">
+            <p>Répondez correctment aux 3 questions<br/> suivantes et tenter de remporter 2 tickets<br/> pour un voyage dans l'espace.</p>
+         </div>
+      </div>
+      </main>
+
+      <footer>
+         <img class="logo" src="{{url_for("static",filename="page1/logo.svg")}}" alt="SpaceDream">
+
+         <a class="btn-start" href="{{url_for("page_debut")}}">Commencer</a>
+
+         <img class="cosmosurfeur" src="{{url_for("static",filename="page1/surfspace.svg")}}" alt="CosmoSurfeur">
+      </footer>
+
+   </body>
+</html>

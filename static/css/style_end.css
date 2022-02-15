@@ -1,0 +1,45 @@
+/*CSS PAGE END*/
+
+*
+{
+   box-sizing: border-box;
+   font-size: 10px;
+}
+
+:root
+{
+   --font-color: rgba(255, 255, 255, 1);
+   --police-size: 4.5rem;
+   --space-back: url("../page5/background.svg");
+   --nunito-font: 'Nunito', sans-serif;
+   --box-show: 1px solid black;
+}
+
+html
+{
+   height: 74rem;
+   width: 137rem;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   color: var(--font-color);
+   font-family: var(--nunito-font);
+
+}
+
+body
+{
+   background: var(--space-back) no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-right: auto;
+   margin-left: 10rem;
+}
+
+p
+{
+   font-size: 4rem;
+}
